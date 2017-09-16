@@ -1,29 +1,30 @@
 import Head from 'next/head';
+import React from 'react';
 
 var index = (function (_ref) {
   var title = _ref.title,
       children = _ref.children;
   return React.createElement(
-    "div",
+    'div',
     null,
     React.createElement(
       Head,
       null,
       React.createElement(
-        "title",
+        'title',
         null,
         title
       ),
-      React.createElement("meta", { name: "viewport", content: "initial-scale=1.0, width=device-width" }),
-      React.createElement("link", { rel: "stylesheet", href: "https://unpkg.com/tachyons" }),
-      React.createElement("link", {
-        href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900",
-        rel: "stylesheet"
+      React.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0, width=device-width' }),
+      React.createElement('link', { rel: 'stylesheet', href: 'https://unpkg.com/tachyons' }),
+      React.createElement('link', {
+        href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
+        rel: 'stylesheet'
       }),
       React.createElement(
-        "style",
+        'style',
         null,
-        "\n          body {\n            font-family: roboto;\n          }\n        "
+        '\n          body {\n            font-family: roboto;\n          }\n        '
       )
     ),
     children

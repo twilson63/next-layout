@@ -1,9 +1,27 @@
 {
   "name": "@twilson63/next-layout",
   "version": "1.0.0",
-  "description": "A opinionated layout component for next.js (tachyons and roboto)",
-  "main": "index.js",
-  "repository": {},
+  "description":
+    "A opinionated layout component for next.js (tachyons and roboto)",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.es.js",
   "author": "Tom",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js -n next-layout"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "rollup": "^0.49.3",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-jsx": "^1.0.3"
+  },
+  "repository": "git@github.com:twilson63/next-layout.git",
+  "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "babel": {
+    "presets": [["env", { "modules": false }], "react"]
+  }
 }

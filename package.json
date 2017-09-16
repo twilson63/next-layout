@@ -1,0 +1,9 @@
+{
+  "name": "@twilson63/next-layout",
+  "version": "1.0.0",
+  "description": "A opinionated layout component for next.js (tachyons and roboto)",
+  "main": "index.js",
+  "repository": {},
+  "author": "Tom",
+  "license": "MIT"
+}
